@@ -1,4 +1,3 @@
-
 <template>
   <section class="ld-section">
     <div class="ld-wrap">
@@ -15,8 +14,7 @@
             <button type="button" @click="resetInput"  class="btn-del"  v-show="focusInput"><span class="hidden">다시쓰기</span></button>
           </form>
           <div class="complete-wrap" v-show="focusInput">
-             <components :is="appendScroll" class="scroll-area" :settings="scrollbarSettings" @ps-scroll-y="scrollHandle">
-              <div class="complete-box" v-if="lndKeyWordList.length > 0" :slot="(screenMode == 'pc')? 'scrollWrapper': null">
+              <div class="complete-box" v-if="lndKeyWordList.length > 0">
                 <ul class="complete-list" v-if="lndKeyWordList.length > 0">
                  <li  v-for="index in 2" :key="index">
                     <a href="javascript:void(0)">중고직거래 > 스마트12345스마트12345스마트12345스마트12345스마트12345스마트12345스마트12345스마트12345스마트12345스마트12345스마트12345스마트12345스마트12345스마트12345스마트12345</a>
@@ -29,7 +27,6 @@
                     </li>
                   </ul>
               </div>
-              </components>
           </div><!--// complete-wrap -->
         </div><!-- // auto-complete -->
       </div><!--// srch-box -->
@@ -163,11 +160,6 @@ Navigation as HooperNavigation,
 Pagination as HooperPagination } from 'hooper';
 
 import 'hooper/dist/hooper.css';
-import VuePerfectScrollbar from 'vue-perfect-scrollbar' // 200722 스크롤 추가
-
-var TempDiv = { // 200722 스크롤 추가
-  template: `<div><slot name="scrollWrapper"></slot></div>`
-};
 export default {
   name: 'Landing',
   metaInfo: { //seo 개선 
@@ -183,7 +175,6 @@ export default {
   },
   data(){
     return {
-      appendScroll:"",
       focusInput:false, 
       keyword:'',
       allselected:false,
@@ -267,18 +258,13 @@ export default {
         {id:1,imgsrc:"http://placehold.it/960x2000",desc:"이벤트이미지2",link:"http://www.naver.com",type:"_blank"}
       ],
       selected:{0:'',1:'',2:'',3:''},
-      scrollbarSettings: {
-        maxScrollbarLength: 341
-      }
     }
   },
   components: {
       Hooper,
       Slide,
       HooperNavigation,
-      HooperPagination,
-      VuePerfectScrollbar, // 200722 스크롤 추가
-      TempDiv // 200722 스크롤 추가
+      HooperPagination
   },
   methods: {
     popLd: function () {
@@ -330,13 +316,10 @@ export default {
     setScreenMode:function(){
       var w = window.innerWidth;
       var org = this.screenMode;
-      if(w>=1025) this.screenMode = "pc";
+      if(w>1025) this.screenMode = "pc";
       else if(w<1025 && w>640) this.screenMode = "tablet";
       else this.screenMode = "mobile";
       if(org == this.screenMode) return false;
-      this.appendScroll=''
-      if(this.screenMode == "pc") this.appendScroll=TempDiv 
-      else this.appendScroll=VuePerfectScrollbar      
       if(this.hooper)
         this.hooper.restart();
         this.activetab={0:true,1:false,2:false,3:false}
@@ -400,9 +383,6 @@ export default {
       }
     },getKeyWord:function () {
       this.lndKeyWordList=["list1","list2","list3","list4"];
-    },
-    scrollHandle:function(evt) {
-      //console.log(evt)
     }
   },
   created(){
@@ -412,6 +392,7 @@ export default {
     this.openEventPop()
     this.setScreenMode()
     window.addEventListener('resize',this.setScreenMode)
+    // document.querySelector('.ld-section').addEventListener('click',this.blurInput)
   }
 }
 </script>

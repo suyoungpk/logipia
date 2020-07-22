@@ -33,11 +33,11 @@
             </p>
           </li>
         </ul>
-        <ul class="tabs-st3 ">
-          <li><a href="javascript:void(0)" :class="(activetab==1)?'on':''" @click="activetab=1">전동신차</a></li>
-          <li><a href="javascript:void(0)" :class="(activetab==2)?'on':''" @click="activetab=2">두산 창고 물류 장비</a></li>
-          <li><a href="javascript:void(0)" :class="(activetab==3)?'on':''" @click="activetab=3">두산 배터리</a></li>
-          <li><a href="javascript:void(0)" :class="(activetab==4)?'on':''" @click="activetab=4">장비 관리 솔루션(Lin-Q)</a></li>
+        <ul class="tabs-st3 " id="tab">
+          <li><a href="javascript:void(0)" :class="(activetab==1)?'on':''" @click="activetab=1;$router.push({path: '/product/sales/electric-forklift'})">전동신차</a></li>
+          <li><a href="javascript:void(0)" :class="(activetab==2)?'on':''" @click="activetab=2;$router.push({path: '/product/sales/storage-equipment'})">두산 창고 물류 장비</a></li>
+          <li><a href="javascript:void(0)" :class="(activetab==3)?'on':''" @click="activetab=3;$router.push({path: '/product/sales/battery'})">두산 배터리</a></li>
+          <li><a href="javascript:void(0)" :class="(activetab==4)?'on':''" @click="activetab=4;$router.push({path: '/product/sales/lin-q'})">장비 관리 솔루션(Lin-Q)</a></li>
         </ul>
       </div>
       <p class="phase2-mobile">
@@ -347,6 +347,14 @@ export default {
     return {
       pageTitle: '판매',
       activetab:1
+    }
+  },
+  created(){
+     if(this.$route.params.menu != null) {
+      if(this.$route.params.menu == 'electric-forklift') this.activetab = 1
+      else if(this.$route.params.menu == 'storage-equipment') this.activetab = 2
+      else if(this.$route.params.menu == 'battery') this.activetab = 3
+      else if(this.$route.params.menu == 'lin-q') this.activetab = 4
     }
   },
    methods: {

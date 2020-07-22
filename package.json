@@ -5,7 +5,7 @@
   "author": "limkwangtae",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --host 0.0.0.0 --disableHostCheck true --inline --progress --config build/webpack.dev.conf.js",
     "start": "node server.js",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js",
@@ -19,10 +19,12 @@
     "express": "^4.16.4",
     "hooper": "^0.1.2",
     "owl.carousel": "^2.3.4",
+    "perfect-scrollbar": "^1.5.0",
     "v-body-scroll-lock": "^1.1.3",
     "vue": "^2.5.2",
     "vue-meta": "^2.3.1",
     "vue-owl-carousel": "^2.0.3",
+    "vue-perfect-scrollbar": "^0.2.1",
     "vue-router": "^3.0.1",
     "vue-scrollto": "^2.15.0"
   },

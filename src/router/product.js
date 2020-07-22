@@ -7,7 +7,6 @@ import PaidService from '@/components/product/PaidService'
 import LogipiaUsedList from '@/components/product/LogipiaUsedList'
 import LogipiaUsedDetail from '@/components/product/LogipiaUsedDetail'
 
-
 const router = [
   {
     path: '/',
@@ -16,10 +15,11 @@ const router = [
       {path: 'product/rental', name: 'Rental', component: Rental},
       {path: 'product/smart-lease', name: 'SmartLease', component: SmartLease},
       {path: 'product/sales', name: 'Sales', component: Sales},
+      {path: 'product/sales/:menu', name: 'Sales', component: Sales, props: (route) => ({name: route.params.menu})},
       {path: 'product/doosan-care-service', name: 'DoosanCareService', component: DoosanCareService},
       {path: 'product/paid-service', name: 'PaidService', component: PaidService},
       {path: 'product/logipia-used', name: 'LogipiaUsedList', component: LogipiaUsedList},
-      {path: 'product/logipia-used/:id', name: 'LogipiaUsedDetail', component: LogipiaUsedDetail}
+      {path: 'product/logipia-used/:eqipId', name: 'LogipiaUsedDetail', component: LogipiaUsedDetail, props: (route) => ({eqipId: route.params.eqipId})}
     ]
   }
 ]
