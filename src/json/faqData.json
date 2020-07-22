@@ -1,0 +1,101 @@
+{
+  "data": {
+    "faqList": [
+      {
+        "number" : 40,
+        "title": "중고마켓과 중고직거래의 차이가 뭔가요?",
+        "category": "중고마켓/ 중고직거래",
+        "answer": "뭘까~~~요?"
+      },
+      {
+        "number" : 39,
+        "title": "두산 모든 제품을 빌릴 수 있나요?",
+        "category": "렌탈",
+        "answer": "!!!!!!!!!!!!!!!"
+      },
+      {
+        "number" : 38,
+        "title": "다른 장비도 정비가 가능한가요?",
+        "category": "정비서비스",
+        "answer": "지게차 제품만 정비가 가능합니다."
+      },
+      {
+        "number" : 37,
+        "title": "스마트리스가 뭔가요?",
+        "category": "스마트리스",
+        "answer": "!!!!!!!!!!!!!!!"
+      },
+      {
+        "number" : 36,
+        "title": "주로 어디에 사용할 수 있나요?",
+        "category": "AUTOMATION& INDUSTRIAL",
+        "answer": "!!!!!!!!!!!!!!!"
+      }
+      ,
+      {
+        "number" : 35,
+        "title": "일반사용자인데 법인사용자로 변경하고 싶어요.",
+        "category": "사용자 안내",
+        "answer": "!!!!!!!!!!!!!!!"
+      },
+      {
+        "number" : 34,
+        "title": "신제품 구매도 가능한가요?",
+        "category": "기타",
+        "answer": "!!!!!!!!!!!!!!!"
+      },
+      {
+        "number" : 33,
+        "title": "구매 시 홈페이지에서 결제가 가능한가요?",
+        "category": "중고마켓/ 중고직거래",
+        "answer": "!!!!!!!!!!!!!!!"
+      },
+      {
+        "number" : 32,
+        "title": "중고직거래 시 수수료가 발생하나요?",
+        "category": "중고마켓/ 중고직거래",
+        "answer": "!!!!!!!!!!!!!!!"
+      },
+      {
+        "number" : 31,
+        "title": "렌탈비용은 얼마인가요?",
+        "category": "렌탈",
+        "answer": "컵라면"
+      }
+    ],
+    "faqcategory": [
+      {
+        "no":0,
+        "categoryname": "전체"
+      },
+      {
+        "no":1,
+        "categoryname": "중고마켓/ 중고직거래"
+      },
+      {
+        "no":2,
+        "categoryname": "렌탈"
+      },
+      {
+        "no":3,
+        "categoryname": "정비서비스"
+      },
+      {
+        "no":4,
+        "categoryname": "스마트리스"
+      },
+      {
+        "no":5,
+        "categoryname": "AUTOMATION& INDUSTRIAL"
+      },
+      {
+        "no":6,
+        "categoryname": "사용자 안내"
+      },
+      {
+        "no":7,
+        "categoryname": "기타"
+      }
+    ]
+  }
+}

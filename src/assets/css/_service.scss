@@ -1,0 +1,256 @@
+@charset "UTF-8";
+/* 서비스 공통 */
+.servicehead-wrap {width:100%;
+  .servicehead {position: relative; width:100%;height: 200px; padding-top: 55px; padding-left: 80px; background-color: #364151;
+    h2{color: #fff; font-size: rem(26px);font-family: $ff3;
+      em{display:block;margin-top:21px;font-size:rem(40px);font-family:$ff5;color:#0018a8;letter-spacing:-2.8px; font-style: normal;}
+    }
+    .btn-service {position:absolute; top:calc(50% - 25px); right:77px; display: block;width:230px; height: 50px;
+      background: $pointColor; color: #fff; font-size: rem(24px);font-family: $ff2; line-height: 50px; text-align: center; transition: all 0.4s;
+      &:hover {background: $pointColor2; transition: all 0.4s;}
+      &:focus {background: $pointColor2; transition: all 0.4s;}
+    }
+  }
+}
+.point-text {margin-top: 37px;
+  p {position:relative; display: inline-block; color:#000; font-size:rem(30px); font-family: $ff2; line-height: 1; letter-spacing: -1.1px;
+    em {color:$pointColor3; font-size:rem(30px); font-family: $ff5;font-style: normal;}
+    span {display: block; margin-top:9px; color:#333; font-size:rem(22px); font-family: $ff2; letter-spacing: -1.2px;}
+  }
+}
+.sub-stitle {margin-top:58px; line-height: 1; letter-spacing: -1px; text-align: center;
+  span {position:relative;display:inline-block; padding-bottom:50px; font-size: rem(34px); font-family: $ff5; color: #333;
+    &:after {position: absolute; bottom:-1px; left:calc(50% - 10px); width:19px; height:18px;background: url(../images/service/bg-titlebar.png) no-repeat center center; background-size:100% auto; content: '';}
+  }
+}
+.info-box {
+  > .info-title {margin-bottom:9px; color:#555; font-size: rem(16px);font-family:$ff2;letter-spacing: -0.5px;}
+  > ul {
+    > li {position: relative; padding-left:10px; color:#555; font-size: rem(15px);font-family:$ff2;letter-spacing: -0.5px;
+      + li {margin-top:5px;}
+      &:before {content: "*"; position: absolute; top:4px; left:0; width:10px; height: 10px; color:#555; font-size: rem(15px);font-family:$ff2;}
+    }
+  }
+}
+.table-price {
+    width:100%;border-bottom:1px solid #aaaaaa;
+    caption {
+        position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;
+    }
+    thead {
+        th {
+            padding:17px 3px;height:67px;background:#a0826e;color:#ffffff;line-height:1.1;font-family:'NotoSansKR-Regular';box-sizing:border-box;font-weight:normal;font-size:rem(16px);word-break:keep-all;
+        }
+    }
+    tbody {
+        tr {
+            + tr td {
+                border-top:1px solid #dddddd;
+            }
+        }
+        th {
+            padding:17px 3px;height:67px;background:#a0826e;color:#ffffff;line-height:1.1;font-family:'NotoSansKR-Regular';box-sizing:border-box;font-weight:normal;font-size:rem(16px);word-break:keep-all;
+        }
+        td {
+            padding:5px 3px;height:72px;text-align:center;font-size:rem(17px);font-family:'NotoSansKR-Regular';word-break:keep-all;line-height:1.1;
+            + td {border-left:1px solid #dddddd;}
+        }
+    }
+}
+
+
+/*LinQ*/
+.linq {
+  > section {box-sizing: border-box;}
+  .sub-wrap {padding-top: 20px; padding-bottom: 0;}
+  .servicehead-wrap .servicehead {background: url(../images/service\bg-servicehead-linkq.png) no-repeat center center}
+  .servicehead-wrap .servicehead:after {position: absolute; top:44px; right: 97px; width:351px; height:219px; background: url(../images/service/bg-servicehead-linkq02.png) no-repeat center center; content: ''}
+  .servicehead-wrap .servicehead h2 em {margin-top:13px; width:273px; height: 51px; @include hide; background: url(../images/service/bg-linqtitle.png) no-repeat center center;}
+  .linq-Skill-list {padding: 32px 43% 0 0; background: url(../images/service/bg-linq02.png) no-repeat right center; background-size: 43% auto;
+    > ul {@include clearfix;
+      > li {width:300px; height:auto; float: left; height: 211px;
+        &:nth-child(2n) {margin-left: 40px;}
+        &:nth-child(3) {height: auto}
+        &:nth-child(4) {height: auto}
+        .innerbox {
+          > h4 {position:relative; margin-bottom:14px; width:100%; height:30px; padding:0 0 0 20px; background:$pointColor; color: #fff; font-size: rem(17px);font-family:$ff3; line-height: 30px; box-sizing: border-box;
+            &:after {position: absolute; top:-9px; right:-7px; width:15px; height: 19px; background: #fff; transform: rotate(-45deg);content: '';}
+          }
+          > p {margin-bottom:16px; color: #000; font-family:$ff4; font-size: rem(17px); letter-spacing: -1px; word-break:keep-all; line-height: rem(22px);}
+          > ul {
+            > li {position:relative; padding-left:11px; color:#555; font-size: rem(17px);font-family:$ff3; word-break:keep-all; line-height: rem(20px);letter-spacing: -1px;
+              &:before {position: absolute; top:10px; left:0; width:5px; height: 1px; background: #555; content: '';}
+              + li {margin-top: 6px;}
+            }
+          }
+        }
+      }
+    }
+  }
+  .linq-credo-wrap {
+    .linq-credo-list {margin: 0 -27px;
+      > ul {padding: 25px 0 60px 0;
+        > li {display:inline-block; width:33.3%; padding:0 27px; float: left;
+          .innerbox {width:100%;
+            > h4 {position:relative; padding-left:16px; margin-bottom:13px; color: #333; font-size: rem(19px);font-family:$ff4; box-sizing: border-box;
+              &:before {position:absolute; width:5px; height: 5px; background: #333; top:7px; left:0; content: '';}
+            }
+            > p {display:table;  margin-bottom:8px;
+              > span {width:100%; height:62px; display: table-cell; padding:8px 16px;  color: #000; font-family:$ff3; font-size: rem(17px); letter-spacing: -0.5px; word-break:keep-all; line-height: rem(22px);background:#f5f5f5; vertical-align: middle;}
+            }
+            > ul { padding-left: 15px;
+              > li {position:relative; padding-left:11px; color:#555; font-size: rem(17px);font-family:$ff2; word-break:keep-all; line-height: rem(22px);letter-spacing: -1px;
+                &:before {position: absolute; top:10px; left:0; width:5px; height: 1px; background: #555; content: '';}
+                + li {margin-top: 8px;}
+              }
+            }
+          }
+        }
+          &:after {@include clearfix;}
+      }
+    }
+  }
+  .linqimg-wrap {width:100%; background: #f7f7f7; padding: 58px 0;
+    .linqimg {width:1097px; margin:0 auto; text-align:center;
+      .img-pc {display: inline-block;}
+      .img-mobile {display: none;}
+    }
+    .linqweb-wrap {width:810px; height: 170px; margin: 0 auto; border:2px solid #ddd; @include border-radius(8px); background: #fff;
+      .linqweb {padding: 23px 45px 23px 235px; background: url(../images/service/bg-linq03.png) no-repeat 43px 25px; background-size: 152px 103px;
+        h3 { margin-bottom:5px; color:$pointColor5; font-size: rem(19px);font-family:$ff4;letter-spacing: -1px;}
+        p { margin-bottom:13px; color:#555; font-size: rem(17px);font-family:$ff2;letter-spacing: -1px; line-height: rem(22px);}
+        .footnote { margin-bottom:0; color:#777; font-size: rem(14px);font-family:$ff2;letter-spacing: -0.5px; line-height: rem(17px);}
+      }
+    }
+    + .sub-wrap {padding-top: 0;}
+  }
+  .linq-price-wrap {padding: 0 51px; margin-bottom: 60px;
+    .linq-price {
+      .linq-price-list-wrap {position:relative; margin-top:25px; border:4px solid #ddd;
+        > .linq-price-list { width:100%; overflow: hidden;
+          > li {width:51%; float: left;
+            .innerbox {position: relative; padding: 30px; width:100%; height: 342px; box-sizing: border-box;
+              h4 {padding-bottom:11px; padding-left:0; margin-bottom:18px; color:#26bfcc; font-size: rem(24px);font-family:$ff5;letter-spacing: -1px;border-bottom: 1px solid #5e7381;
+                em {color: $pointColor3;font-style: normal;}
+                span {color:#333;font-size: rem(20px);font-family:$ff3;}
+              }
+              > dl {position:relative; padding-left:18px;
+                &:before {position: absolute; top:6px; left:8px; width:5px; height: 5px; background:#aaa; content: ''}
+                > dt {display: inline; color:#555; font-size: rem(17px);font-family:$ff2;letter-spacing: -1px;}
+                > dd {display: inline; color:#555; font-size: rem(17px);font-family:$ff2;letter-spacing: -1px; word-break: keep-all;}
+                + dl {margin-top: 8px;}
+              }
+              h5 {display:inline-block; padding:0 15px; margin: 30px 0 12px 10px; color:#555; font-size: rem(15px);font-family:$ff3;letter-spacing: -0.5px; line-height: 25px; background:#e7ebed; @include border-radius(12px); font-weight: normal;
+                + dl:before {top:8px; left:14px; width:2px; height: 2px; background:#555; }
+              }
+              .pricebox {position: absolute; left:0; bottom:30px; width:100%;
+                > ul {text-align: center;
+                  > li {position:relative; display: inline-block; padding: 0 28px; color:$pointColor; font-size: rem(20px);font-family:$ff4;letter-spacing: -0.5px; text-align: center;}
+                  > li + li:before {position: absolute; top:0; left:0; width:1px; height: 20px; background: #ddd; content: '';}
+                }
+              }
+            }
+            &:first-child {width:49%}
+          }
+        }
+        .info-box {background: #fafafa; padding: 18px 29px;}
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .linq-credo-wrap {padding:0 27px;}
+}
+@media screen and (max-width: 1199px) {
+  .linq .linq-Skill-list {padding-left: 20px; padding-right:30%; background-size:34% auto;}
+  .linq .linq-Skill-list>ul>li {width:40%;}
+  .linq .linqimg-wrap {width:100%; padding: 58px 30px;}
+  .linq .linqimg-wrap .linqimg {width:100%; height: auto;}
+  .linq .linqimg-wrap .linqweb-wrap {width:100%; height: auto;}
+}
+@media screen and (max-width: 1024px) {
+  .linq .sub-wrap {padding-top: 0;}
+  .point-text {padding: 0 20px}
+  .table-price{min-width:960px;}
+}
+@media screen and (max-width: 1023px) {
+  .servicehead-wrap {
+    .servicehead {height:140px; padding: 36px 0 36px 6.6%;
+      h2 {font-size: rem(20px)
+        em {font-size:rem(28px);}
+      }
+    }
+  }
+  .point-text {
+    p {font-size:rem(28px);
+      span {font-size:rem(24px);}
+    }
+  }
+  .linq .servicehead-wrap .servicehead h2 em {margin-top: 4px; width: 223px; height: 51px; background-image: url(../images/service/bg-linqtitle-m.png); background-size: 100% auto;}
+  .linq .servicehead-wrap .servicehead:after {right:10px; width:270px; height: 168px; background-size: 100% auto;}
+  .linq .linq-Skill-list {padding-right: 20px; background-image: url(../images/service/bg-linq02-m.png); background-position: right bottom; background-size: 44% auto;}
+  .linq .linq-Skill-list>ul {margin-left: -10px; margin-right: -10px;}
+  .linq .linq-Skill-list>ul>li {width:50%;padding: 0 10px 20px 10px; height: auto;}
+  .linq .linq-Skill-list>ul>li:nth-child(2n) {margin-left: 0;}
+  .linq .linq-Skill-list>ul>li:nth-child(3), .linq .linq-Skill-list>ul>li:nth-child(4) {clear: left;}
+  .linq-credo-wrap {padding: 0 20px}
+  .linq .linq-credo-wrap .linq-credo-list {margin: 0 -7px;}
+  .linq .linq-credo-wrap .linq-credo-list>ul>li {padding: 0 7px;}
+  .linq .linq-credo-wrap .linq-credo-list>ul>li .innerbox>p>span{letter-spacing: -1.2px}
+  .linq .linq-price-wrap .linq-price .linq-price-list-wrap>.linq-price-list>li {width:100% !important; float: none;}
+  .linq .linq-price-wrap .linq-price .linq-price-list-wrap>.linq-price-list>li .innerbox {height: auto; padding-bottom:90px;}
+}
+@media screen and (max-width: 768px) {
+  .linq .servicehead-wrap .servicehead:after {top:11px;right:5px;  background-size: 100% auto;}
+
+}
+@media screen and (max-width: 767px) {
+  .service .sub-wrap > section {background: #fff; margin-bottom: 0; padding-bottom: 30px; border-bottom: 1px solid #dddddd;}
+  .service .sub-wrap > section + section {margin-top: 10px;}
+  .servicehead-wrap {padding-bottom: 30px; border-bottom: 1px solid #dddddd; background: #fff;
+    .servicehead {height:120px; padding: 34px 0 34px 20px;
+      h2 {font-size: rem(18px);
+        em {margin-top:14px; font-size:rem(26px);}
+      }
+    }
+  }
+  .point-text { margin-top: 39px;
+    p {font-size:rem(20px); line-height: 1.2;
+      em {display: block;font-size:rem(20px)}
+      span {font-size:rem(16px); line-height: 1.2;}
+    }
+  }
+  .sub-stitle {margin-top:0; padding-top: 30px;
+    span {position:relative;display:inline-block; padding-bottom:58px; font-size: rem(23px);
+      &:after {position: absolute; bottom:-1px; left:calc(50% - 10px); width:19px; height:18px;background: url(../images/service/bg-titlebar.png) no-repeat center center; background-size:100% auto; content: '';}
+    }
+  }
+  .linq .servicehead-wrap .servicehead h2 em {width:163px; height: 30px;}
+  .linq .servicehead-wrap .servicehead:after {width:168px; height:105px; top:50px;}
+  .linq .linq-Skill-list {padding-bottom: 215px; background-size:300px auto; background-position: bottom center;}
+  .linq .linq-Skill-list>ul {margin: 0;}
+  .linq .linq-Skill-list>ul>li {width:100%; padding: 0; float: none;}
+  .linq .linq-Skill-list>ul>li + li {margin-top: 30px;}
+  .linq .linq-credo-wrap .linq-credo-list {margin: 0;}
+  .linq .linq-credo-wrap .linq-credo-list>ul {padding-bottom: 0;}
+  .linq .linq-credo-wrap .linq-credo-list>ul>li{padding: 0; width:100%; float: none;}
+  .linq .linq-credo-wrap .linq-credo-list>ul>li + li {margin-top: 30px;}
+  .linq .linq-credo-wrap .linq-credo-list>ul>li .innerbox>p>span {height: auto;}
+  .linq .linqimg-wrap {padding: 40px 20px; margin-top: 10px; border-bottom: 1px solid #dddddd;}
+  .linq .linqimg-wrap .linqimg .img-pc {display: none;}
+  .linq .linqimg-wrap .linqimg .img-mobile {display: inline-block; width:100%; height: auto;}
+  .linq .linqimg-wrap .linqweb-wrap .linqweb {padding: 152px 20px 20px 20px; background-position: center 23px;}
+  .linq .linq-price-wrap {margin-top: 10px; padding-left: 20px; padding-right: 20px;}
+  .linq .linq-price-wrap .linq-price .linq-price-list-wrap>.linq-price-list>li .innerbox h4 {font-size: rem(21px);}
+  .linq .linq-price-wrap .linq-price .linq-price-list-wrap>.linq-price-list>li .innerbox h4 span {font-size: rem(16px);}
+  .linq .linq-price-wrap .linq-price .linq-price-list-wrap>.linq-price-list>li .innerbox .pricebox>ul>li { padding: 0 20px; font-size: rem(20px);}
+}
+@media screen and (max-width: 640px) {
+  .linq .sub-wrap {padding-top: 0;}
+  .table-price{min-width:620px;}
+}
+@media screen and (max-width: 359px) {
+  .linq .servicehead-wrap .servicehead:after {width:135px;}
+  .linq .linq-price-wrap .linq-price .linq-price-list-wrap>.linq-price-list>li .innerbox .pricebox>ul>li {font-size: rem(18px)}
+}

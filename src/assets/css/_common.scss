@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@media all and (max-width:768px){
+  html {font-size: 15px;}
+ }
+
+ @media all and (max-width:640px){
+  html {font-size: 14px;}
+ }
+
+.servicebottom-wrap {padding-top: 40PX; background: #f6f6f6;
+  .servicebottom {max-width:1200px; margin: 0 auto; padding-bottom: 40px;
+    > ul {overflow: hidden;
+      > li {width:50%; float: left;
+        > .innerbox {position: relative; padding: 0 49px; height: 165px;
+          > h3 {padding-bottom:12px; margin-bottom:27px; color:#333; font-size: rem(24px);font-family:$ff4;letter-spacing: -1px; border-bottom: 1px solid #5e7381;}
+          > p {color:#555; font-size: rem(17px);font-family:$ff2; word-break:keep-all; line-height: rem(22px);letter-spacing: -1px;}
+          .btnbox {position: absolute; left:49px; bottom:0; width:100%; height: 40px;
+            .btn-service {display:inline-block; padding:0 33px; background: #333; text-align: center; transition: all 0.2s;box-sizing:border-box;;
+              > span {position: relative; display:inline-block; padding-left:32px; color:#fff; font-size: rem(17px);font-family:$ff2; line-height: 40px; letter-spacing: -1px;
+                &:before {position: absolute; top:0px; left: 0; width:18px; height:40px; background-position: 0 center; background-repeat: no-repeat; content: ''}
+              }
+              &.download > span:before {background-image: url(../images/common/bg-download.png); background-size: 16px 16px;}
+              &.email > span:before {background-image: url(../images/common/bg-email.png); background-size: 18px 13px;}
+              &:hover {background: $pointColor;transition: all 0.2s;}
+              &:focus {background: $pointColor;transition: all 0.2s;}
+              &.tel {border: 1px solid #333; background: #fff; padding:0 23px;
+                > span {padding-left:26px;color:#333; line-height: 38px;
+                  &:before {height:38px; background-image: url(../images/common/bg-tel.png); background-size: 14px 14px;}
+                }
+                &.mobile {display: none}
+              }
+            }
+            .btn-service + .btn-service {margin-left: 8px;}
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .servicebottom-wrap .servicebottom {padding: 0 51px 40px 51px;}
+  .servicebottom-wrap .servicebottom > ul > li > .innerbox {padding:0 20px;
+    .btnbox {left:20px;
+      .btn-service {padding:0 15px;
+        &.tel {padding:0 14px;}
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .servicebottom-wrap .servicebottom>ul>li>.innerbox .btnbox .btn-service.tel.pc {display: none}
+  .servicebottom-wrap .servicebottom>ul>li>.innerbox .btnbox .btn-service.tel.mobile {display: inline-block;}
+  .servicebottom-wrap .servicebottom>ul>li>.innerbox .btnbox .btn-service.tel:hover {border-color:$pointColor3;transition: all 0.2s;}
+  .servicebottom-wrap .servicebottom>ul>li>.innerbox .btnbox .btn-service.tel:focus {border-color:$pointColor3;transition: all 0.2s;}
+}
+
+@media screen and (max-width: 980px) {
+  .servicebottom-wrap .servicebottom > ul > li {float:none;width:100%;
+    .innerbox {height:auto;
+      .btnbox {position:relative;left:0;margin-top:20px;height:auto;}
+    }
+    +li {margin-top:30px;}
+    .btn-service + .btn-service {margin-left: 8px;}
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .servicebottom-wrap .servicebottom {padding:0 0 40px;}
+}
+
+@media screen and (max-width: 640px) {
+  .servicebottom-wrap {margin-top:10px;padding:30px 0;border-bottom:1px solid #dddddd;background:#ffffff;
+    .servicebottom {padding:0;
+      > ul > li .innerbox {
+        .btnbox {margin-top:10px;}
+        > h3 {margin-bottom:17px;}
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .servicebottom-wrap .servicebottom>ul>li>.innerbox .btnbox .btn-service {width:100%;
+    +.btn-service {margin:7px 0 0 0;}
+  }
+}

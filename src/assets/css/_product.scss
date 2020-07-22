@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+.sub-wrap {
+    &.product {
+        padding:20px 0 60px 0;max-width:1200px;
+        section {box-sizing:border-box;}
+        .sub-title.ft30 {font-size:rem(30px);}
+    }
+}
+
+.head-cont {
+    .product-head {
+        position:relative;padding:58px 0 58px 6.6%;max-width:100%;height:200px;background:url(../../assets/images/product/bg-product.png);background-size:contain;
+        &:after {position:absolute;top:0;right:93px;width:268px;height:240px;background:url(../../assets/images/product/ico-forkLift.png) no-repeat;content:"";}
+        h2 {
+            position:relative;z-index:1;font-size:rem(24px);color:#222222;letter-spacing:0.2px;
+            span {display:block;margin-top:21px;font-size:rem(40px);font-family:$ff5;color:#0018a8;letter-spacing:-2.8px;}
+        }
+    }
+    .txt-product01 {
+        margin-top:39px;font-size:rem(30px);font-family:$ff2;color:#000000;letter-spacing:-1.4px;line-height:1;
+        span {color:#ff6600;font-family:$ff5;}
+    }
+    .txt-product02 {
+        margin-top:9px;font-size:rem(22px);color:#333333;font-family:$ff2;line-height:1;letter-spacing:-1.1px;
+    }
+}
+
+.lp-sub.product {
+    section + section {padding-top:60px;}
+}
+
+.product-detail {
+    margin-top:30px;padding:40px 6.6%;background:#f6f6f6;
+    li {
+        &.single dl dd {
+            &:after {content:none;}
+            p {
+                line-height:1.2;
+                &:after {content:none;}
+            }
+        }
+        +li {margin-top:30px;}
+        dl {
+            position:relative;padding-left:369px;
+            dt {
+                position:absolute;left:0;padding:0 3.9%;width:369px;height:40px;background:#0018a8;font-size:rem(19px);color:#ffffff;font-family:$ff4;line-height:38px;letter-spacing:-0.6px;
+                &:before {position:absolute;top:0;right:0;width:0;height:0;border-top:11px solid #f6f6f6;border-left:11px solid transparent;content:"";}
+                &:after {position:absolute;right:-58px;top:19px;width:58px;border-top:1px solid #aaaaaa;content:"";}
+            }
+            dd {
+                position:relative;margin-left:75px;font-size:rem(17px);color:#333333;letter-spacing:-0.6px;
+                &:after {position:absolute;left:-17px;top:8px;bottom:8px;border-left:1px solid #aaaaaa;content:"";}
+                p {
+                    position:relative;line-height:1;font-size:rem(17px);
+                    &:after {position:absolute;left:-17px;top:8px;width:10px;border-top:1px solid #aaaaaa;content:"";}
+                    +p {
+                        margin-top:7px;
+                        &:after {top:auto;bottom:8px;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .sub-wrap.product {padding-top:0;}
+    .txt-product01, .txt-product02 {padding:0 20px;}
+}
+
+@media screen and (max-width: 1024px) {
+    .head-cont {
+        .product-head {
+            padding:36px 0 36px 6.6%;height:140px;
+            &:after {right:22px;width:214px;height:192px;;background-size:214px auto;}
+            h2 {
+                font-size:rem(20px);
+                span {font-size:rem(28px);}
+            }
+        }
+        .txt-product01 {padding:0 20px;font-size:rem(24px);}
+        .txt-product02 {padding:0 20px;font-size:rem(18px);}
+    }
+    .product-detail li {
+        dl {
+            padding-left:0;
+            dt {
+                position: relative;
+                &:after {top:auto;bottom:-32px;left:8px;width:0;height:32px;border-top:0;border-left:1px solid #aaaaaa;}
+            }
+            dd {
+                margin:10px 0 0 35px;
+                &:before {position:absolute;left:-26px;top:21px;bottom:8px;width:10px;border-top:1px solid #aaaaaa;content:"";}
+            }
+        }
+        &.single {
+            dl {
+                dt:after {bottom:-21px;height:21px;}
+                dd:before {top:10px;}
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sub-wrap.product {
+        padding-bottom:30px;
+        section {
+            background:#ffffff;
+            +section {padding:15px 0;}
+        }
+        .sub-title {font-size:rem(23px) !important;}
+    }
+    .head-cont {
+        padding-bottom:30px;
+        .txt-product02 {line-height:1.2;}
+    }
+}
+@media screen and (max-width: 640px) {
+    .head-cont {
+        .product-head {
+            padding:34px 0 34px 20px;height:120px;
+            &:before {height:120px;}
+            &:after {top:45px;right:10px;width:160px;height:144px;background-size:160px auto;}
+            h2 {
+                font-size:rem(18px);
+                span {margin-top:14px;font-size:rem(26px);}
+            }
+        }
+        .txt-product01 {
+            font-size:rem(20px);line-height:1.2;
+            span {display:block;}
+        }
+        .txt-product02 {font-size:rem(16px);line-height:1.2;}
+    }
+    .sub-wrap.product {
+        padding-bottom:0;
+        section {
+            border-bottom:1px solid #dddddd;
+            +section {margin-top:10px;padding:30px 0 0;}
+        }
+        .sub-title {font-size:rem(20px) !important;}
+    }
+    .product-detail {
+        padding:20px;
+        li {
+            dl {
+                dt {
+                    width:320px;height:34px;font-size:rem(16px);line-height:32px;
+                    &:after {bottom:-29px;height:29px;}
+                }
+                dd {
+                    &:before {top:18px;}
+                    &:after {top:8px;bottom:8px;}
+                    p {
+                        font-size:rem(15px);
+                        &:after {top:8px;}
+                        +p:after {bottom:8px;}
+                    }
+                } 
+            }
+            &.single {
+                dl {
+                    dt:after {bottom:-17px;height:17px;}
+                    dd:before {top:6px;}
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 460px) {
+    .head-cont .product-head:after {top:52px;width:134px;height:120px;background-size:134px auto;}
+    .product-detail li dl dt {width:100%;}
+}
+@media screen and (max-width: 359px) {
+    .lp-sub.product .sub-title {font-size:rem(18px);letter-spacing:-2px;}
+    .head-cont .product-head {
+        padding:34px 0 34px 20px;
+        h2 {letter-spacing:-1px;}
+        &:after {top:51px;right:5px;}
+        .txt-product01 {margin-top:46px;}
+    }
+}

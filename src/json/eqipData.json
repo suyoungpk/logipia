@@ -1,0 +1,230 @@
+{
+  "data": {
+    "marketItems": [
+      {
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":true
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      }
+    ],
+    "p2pMarketItems":[
+      {
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      },{
+        "img":"http://placehold.it/500x500",
+        "link":"https://logipia.doosan-iv.com/",
+        "name":"토요타 제품 처분합니다.",
+        "info1":"전동좌식",
+        "info2":"2010년",
+        "info3":"46,078시간",
+        "info4":"4톤 이상(전동식 좌식)",
+        "interest":true,
+        "price":"2,200",
+        "soldout":false
+      }
+    ]
+  }
+}
